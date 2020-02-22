@@ -1,0 +1,28 @@
+# == Schema Information
+#
+# Table name: contents
+#
+#  id         :integer          not null, primary key
+#  body       :text(65535)
+#  image      :string(255)
+#  latitude   :float(24)
+#  longitude  :float(24)
+#  name       :string(255)
+#  place      :string(255)
+#  prefecture :string(255)
+#  title      :string(255)
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  place: MyString
+  body: MyText
+
+two:
+  title: MyString
+  place: MyString
+  body: MyText

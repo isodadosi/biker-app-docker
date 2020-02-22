@@ -1,0 +1,17 @@
+<h1>マイページ</h1>
+
+<% if @current_user %>
+  <h2>ようこそ<%= @current_user.name%>様</h2>
+    <% content_for(:delete_name, '削除') %>
+  <% content_for(:delete_class, 'btn btn-outline-dark') %>
+  <%= render partial: 'contents/content', locals: { contents: @contents } %>
+
+<% else %>
+  <h2>ようこそゲストユーザー様、まずはユーザー登録をお願いします</h2>
+<% end %>
+
+
+
+
+
+
